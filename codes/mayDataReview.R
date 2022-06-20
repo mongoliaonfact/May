@@ -28,7 +28,8 @@ appear %>% count(geo_points) %>%
               legend.title = element_text(color = 'blue', 
                                           size=10, 
                                           face = 'bold'))+
-        labs(title = 'Distribution of Geo Points, May 01')
+        labs(title = 'Distribution of Geo Points, May 01')+
+        ggsave("figures/may_first_geopoint_distr.png")
 
 appear %>% 
         select(timestamp) %>% 
